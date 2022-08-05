@@ -1,9 +1,15 @@
---efes reanimate
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
     Text = "Reanimating...",
-    Color = Color3.fromRGB(255, 10, 70),
+    Color = Color3.fromRGB(255, 204, 204),
     TextSize = 36,
-    Font = Enum.Font.Bangers
+    Font = Enum.Font.Ubuntu
+});
+wait(.7)
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "Reanimated!",
+    Color = Color3.fromRGB(255, 204, 204),
+    TextSize = 36,
+    Font = Enum.Font.Ubuntu
 });
 
 if not _G.Velocity then _G.Velocity = Vector3.new(30,0,0) end
@@ -38,17 +44,17 @@ local Reanimated = true
 if Humanoid.RigType == Enum.HumanoidRigType.R15 then
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
     Text = "R15!.",
-    Color = Color3.fromRGB(255, 10, 70),
+    Color = Color3.fromRGB(255, 204, 204),
     TextSize = 36,
-    Font = Enum.Font.Bangers
+    Font = Enum.Font.Ubuntu
 });
 return end
 if game.Players.LocalPlayer.Character:FindFirstChild("brickguywuzhere") or workspace:FindFirstChild("brickguywuzhere") then
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
     Text = "Already reanimated, please reset your character.",
-    Color = Color3.fromRGB(255, 10, 70),
+    Color = Color3.fromRGB(255, 204, 204),
     TextSize = 36,
-    Font = Enum.Font.Bangers
+    Font = Enum.Font.Ubuntu
 });
 return end
 
